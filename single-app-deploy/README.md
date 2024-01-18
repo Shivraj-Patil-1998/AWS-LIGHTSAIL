@@ -129,4 +129,11 @@ $ npm run build
 $ # we have to copy our build file inside the htdocs
 $ cp -r build/* ~/htdocs/
 
+
+To Remove all PIDS Running related to node
+pgrep node | xargs kill -9
+pgrep node
+ps aux | grep node
+lsof -i :8080
+
 ```
